@@ -1,0 +1,163 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+        "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<title>ejb Portfolio - contact</title>
+<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
+<link rel="stylesheet" type="text/css" href="style/style.css">
+<script type="text/javascript">
+function validate_required(field,alerttxt)
+{
+with (field)
+  {
+  if (value==null||value=="")
+    {
+    alert(alerttxt);return false;
+    }
+  else
+    {
+    return true;
+    }
+  }
+}
+
+function validate_email(field,alerttxt)
+{
+with (field)
+  {
+  apos=value.indexOf("@");
+  dotpos=value.lastIndexOf(".");
+  if (apos<1||dotpos-apos<2)
+    {alert(alerttxt);return false;}
+  else {return true;}
+  }
+}
+
+function validate_form(thisform)
+{
+with (thisform)
+  {
+  if (validate_required(urName,"Name must be filled out")==false)
+  {urName.focus();return false;}
+	else if (validate_required(org,"Organization must be filled out") == false)
+	{org.focus();return false;}
+	else if (validate_required(email,"Email must be filled out") == false)
+	{email.focus();return false;}
+	else if (validate_email(email,"Not a valid email address (Ex. myemail@somewhere.com)") == false)
+	{email.focus();return false;}
+	else if (validate_required(message,"Message must be filled out") == false)
+	{message.focus();return false;}
+  }
+}
+</script>
+</head>
+<body>
+<table class="top">
+<tr>
+<td class="topBanner">
+<img src="images/ejbBanner.png" width="437" id="logoBanner" 
+height="100" alt="ejbBanner (11K)" />
+
+<ul class="cssmenu">
+<li class="main"><a href="index.html" title=
+"Main"><span class="displace">Main</span></a></li>
+<li class="work"><a href="work.html" title=
+"Work"><span class="displace">Work</span></a></li>
+<li class="about"><a href="about.html" title="About"><span class=
+"displace">About</span></a></li>
+<li class="contact"><a href="contact.html" class="selected" title=
+"Contact"><span class="displace">Contact</span></a></li>
+</ul>
+
+</td>
+</tr>
+
+<tr>
+<td class="multiColorBorder">
+</td>
+</tr>
+
+</table>
+
+<table class="mid">
+
+<tr>
+<td class="gradBorderLT"></td>
+<td class="gradBorder">
+</td>
+<td class="gradBorderRT"></td>
+</tr>
+
+<tr>
+
+<td rowspan="1" class="gradBorderL">
+</td>
+
+<td class="content">
+<form method="post" action="http://erikjamesbennett.webuda.com/mailer.php" 
+onSubmit="return validate_form(this)" name="contactForm">
+<div id="insideForm">
+
+<table>
+    <tr>
+        <td>
+        <p>Please enter your Name:</p>
+        </td>
+        <td><input type="text" name="urName" /> (i.e., Mrs. Erik Bennett)
+        </td>
+    </tr>
+		<tr>
+        <td>
+        <p>Please enter your Organization:</p>
+        </td>
+        <td><input type="text" name="org" />  (i.e., EJB Coffee Addictics Inc.)
+        </td>
+    </tr>
+    <tr>
+        <td>
+        <p>Please enter your Email Address:</p>
+        </td>
+        <td><input type="text" name="email" /> (i.e., you@emailWithLeastAds.com)
+        </td>
+    </tr>
+    <tr>
+        <td>
+        <p>Please enter your Message:</p>
+        </td>
+        <td><textarea name="message" rows="10" cols="50"></textarea>
+        </td>
+    </tr>
+    <tr>
+        <td></td>
+        <td><input type="submit" value="Send" name="submit" /><input type="reset" value="Clear"></td>
+    </tr>
+    </table>
+		
+</div>
+</form>
+</td>
+
+<td rowspan="1" class="gradBorderR">
+</td>
+
+</tr>
+
+<tr>
+<td class="gradBorderLB"></td>
+<td class="gradBorderB">
+</td>
+<td class="gradBorderRB"></td>
+</tr>
+
+
+
+</table>
+
+<table summary="" class="bottom">
+<tr>
+<td><span class="tagLine">© Erik Bennett 2010 | 505.801.2547 | jamesschool2003@yahoo.com</span></td>
+</tr>
+</table>
+
+</body>
+</html>

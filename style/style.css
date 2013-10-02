@@ -1,0 +1,341 @@
+body
+{
+  background-color: rgb(84,49,0);
+	background-image: url("../images/diag_BG_03.jpg");
+}
+
+table.top
+{
+ color: white;
+ width: 100%; 
+ border: 0px solid rgb(255,255,255); 
+ padding: 0px; 
+ border-collapse: collapse;
+ position: absolute;
+ top: 0em;
+ left: 0em;
+}
+
+table.mid
+{
+ color: black;
+ border: 0px solid rgb(255,255,255); 
+ padding: 0px; 
+ border-collapse: collapse;
+ position: relative;
+ top: 150px;
+ left: auto;
+ right: auto;
+ display: block;
+ margin-right: auto;
+ margin-left: auto;
+ width: 900px;
+}
+
+table.bottom
+{
+ color: white;
+ border: 0px solid rgb(255,255,255); 
+ padding: 20px; 
+ border-collapse: collapse;
+ position: relative;
+ top: 160px;
+ left: auto;
+ right: auto;
+ display: block;
+ margin-right: auto;
+ margin-left: auto;
+ width: 600px;
+}
+
+td
+{
+
+}
+
+td.topBanner
+{
+  background-color: white;
+  min-width: 1100px; 
+	height: 100px;
+	max-height: 100px;
+	mix-height: 100px;
+}
+
+td.multiColorBorder
+{
+  height:33px;
+	padding: 0px;
+  background-image: url(../images/multiBorder03.jpg);
+	background-repeat: repeat-x;
+}
+
+td.content
+{
+  color: white;
+	background-color: rgb(53,31,0);
+  background-image: url(../images/BG_StarRays_01.jpg);
+	min-width: 860px;
+	max-width: 860px; 
+	margin: 0px;  
+	border: 0px solid white;
+	padding: 10px;
+}
+
+td.gradBorder
+{
+  background-image: url(../images/gradAlpha_01.png);
+	height: 8px;
+	margin: 0px;  
+	border: 0px solid white;
+}
+
+td.gradBorderB
+{
+  background-image: url(../images/gradAlpha_02.png);
+	height: 8px;
+	margin: 0px;  
+	border: 0px solid white;
+}
+
+td.gradBorderR
+{
+  background-image: url(../images/gradAlpha_right.png);
+	height: 10px;
+	width: 10px;
+	margin: 0px;  
+	border: 0px solid white;
+}
+
+td.gradBorderL
+{
+  background-image: url(../images/gradAlpha_left.png);
+	height: 10px;
+	width: 10px;
+	margin: 0px;  
+	border: 0px solid white;
+}
+
+td.gradBorderLT
+{
+  background-image: url(../images/gradAlpha_LT.png);
+	height: 5px;
+	width: 10px;
+	margin: 0px;  
+	border: 0px solid white;
+}
+
+td.gradBorderRT
+{
+  background-image: url(../images/gradAlpha_RT.png);
+	width: 10px;
+	height: 5px;
+	margin: 0px;  
+	border: 0px solid white;
+}
+
+td.gradBorderLB
+{
+  background-image: url(../images/gradAlpha_LB.png);
+	height: 5px;
+	width: 10px;
+	margin: 0px;  
+	border: 0px solid white;
+}
+
+td.gradBorderRB
+{
+  background-image: url(../images/gradAlpha_RB.png);
+	width: 10px;
+	height: 5px;
+	margin: 0px;  
+	border: 0px solid white;
+}
+
+.box
+{
+  background-color: rgb(84,49,0);
+	border: 1px solid rgb(53,31,0);
+	padding: 10px 10px 10px 10px;
+	font-size: 1.0em;
+}
+
+.stdThumb
+{
+  border: 1px solid rgb(255,255,255);
+}
+
+img.portrait
+{
+  border: 1px solid rgb(255,255,255);
+	float: right;
+}
+
+.stdThumbLeftBuff
+{
+  margin-left: 20px;
+  border: 1px solid rgb(255,255,255);
+}
+
+.caption
+{
+	font-size: 0.75em;
+}
+
+.caption1
+{
+  color: rgb(232,232,232);
+}
+
+.caption2
+{
+  color: rgb(192,192,192);
+}
+
+.boldMe
+{
+  display: inline;
+  font-weight: bolder;
+}
+
+a:link {text-decoration: none}
+a:visited {text-decoration: none; color: white;}
+a:active {text-decoration: none}
+a:hover {text-decoration: underline; color: white;}
+
+#logobanner
+{
+  float: left; 
+	border: 0px solid white;
+}
+
+#menuBar
+{
+  float: right;
+}
+
+#insideForm
+{
+  font-family: sans-serif;
+}
+
+.title
+{
+  font-family: "Cambria", serif;
+}
+
+.tagLine
+{
+  font-family: "Cambria", serif;
+}
+
+p 
+{
+  font-family: Sans-serif; 
+}
+
+/*
+*	Setup
+*/
+ul.cssmenu {
+	list-style: none;
+	padding: 0px;
+	margin-right: 0px;
+	margin-top: 0px;
+	position:  absolute;
+	top: 0px;
+	right: 0px;
+	}
+
+.displace {
+	position: absolute;
+	left: -5000px;
+	}
+
+ul.cssmenu li {
+	float: left; 
+	}
+
+ul.cssmenu li a {
+	display: block;
+	width: 150px;
+	height: 100px;
+	background: url("../images/menuBar04_matrix.png");
+	background-repeat: no-repeat;
+	}
+
+/*
+*	Normal Links
+*/
+ul.cssmenu li.main a {
+	background-position: 0 0;
+	}
+
+ul.cssmenu li.work a {
+background-position: -135px 0;
+}
+	
+ul.cssmenu li.about a {
+	background-position: -272px 0;
+	}
+
+ul.cssmenu li.contact a {
+	background-position: -430px 0;
+	}
+
+/*
+*	Hover Links
+*/
+ul.cssmenu li.main a:hover {
+	background-position: 0 -100px;
+	}
+
+ul.cssmenu li.work a:hover {
+	background-position: -135px -100px;
+	}
+
+ul.cssmenu li.about a:hover {
+	background-position: -272px -100px;
+	}
+	
+ul.cssmenu li.contact a:hover {
+background-position: -430px -100px;
+}
+
+/*
+*	Clicked Links
+*/
+ul.cssmenu li.main a:active {
+	background-position: 0 -200px;
+	}
+
+ul.cssmenu li.work a:active {
+	background-position: -135px -200px;
+	}
+
+ul.cssmenu li.about a:active {
+	background-position: -272px -200px;
+	}
+	
+ul.cssmenu li.contact a:active {
+	background-position: -430px -200px;
+	}
+
+/*
+*	Selected/Active Links
+*/
+ul.cssmenu li.main a.selected {
+	background-position: 0 -300px;
+	}
+
+ul.cssmenu li.work a.selected {
+	background-position: -135px -300px;
+	}
+
+ul.cssmenu li.about a.selected {
+	background-position: -272px -300px;
+	}
+	
+ul.cssmenu li.contact a.selected {
+	background-position: -430px -300px;
+	}
