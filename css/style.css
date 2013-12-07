@@ -2,20 +2,17 @@
 /* CSS Document */
 
 @font-face {
-    font-family: 'BebasRegular';
-    src: url('font/BEBAS___-webfont.eot');
-    src: url('font/BEBAS___-webfont.eot?#iefix') format('embedded-opentype'),
-         url('font/BEBAS___-webfont.woff') format('woff'),
-         url('font/BEBAS___-webfont.ttf') format('truetype'),
-         url('font/BEBAS___-webfont.svg#BebasRegular') format('svg');
+    font-family: 'NerisSemiBold';
+    src: url('font/PermianSlabSerifTypeface.otf');
     font-weight: normal;
     font-style: normal;
 
 }
 html,body{
- font-family: 'BebasRegular';
+ font-family: 'NerisSemiBold';
 	width:100%;
 	height:100%;
+	color: #909090;
 }
 
 .navigation{
@@ -63,12 +60,19 @@ z-index:1;
 	position:relative;
 }
 .slideno{
+	/*
 	position:absolute;
 	bottom:0px;
 	left:0px;
-	font-size:100px;
+	*/
+	font-size:90px;
 	font-weight:bold;
-	color:rgba(255,255,255,0.3);
+	color:#4b4b4b;
+	display: block;
+	width: 800px;
+	margin-right: auto;
+	margin-left: auto;
+	padding-top: 40px;
 }
 .button{
 	display:block;
@@ -85,25 +89,53 @@ z-index:1;
 	cursor:pointer;
 }
 
+.container {
+	width: 800px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
 /******************************
  SLIDE 1 
 *******************************/
 #slide1{
-	background-color:#005c99;
-	font-size: 25px;
+	/* background-color:#005c99; */
+	background-color:#FFFFFF;
+	font-size: 28px;
 }
 #slide1 .slideno {
-	color:#002E4C;	
+	/*color:#002E4C;*/
 }
-#slide1 p {
-	padding: 20px;
-	width: 600px;
+.slide table {
+	width: 800px;
+	margin-left: auto;
+	margin-right: auto;
 }
+
+#slide1 .content {
+	margin-top: 40px;
+}
+
+#slide1 .leftContent {
+	width: 475px;
+	display: inline-block;
+	font-size: 20px;
+	position: absolute;
+	margin-top: 0;
+}
+
+#slide1 .rightImg {
+	width: 261px;
+	display: inline-block;
+	position: absolute;
+	margin-left: 530px;
+}
+
 /******************************
  SLIDE 2 
 *******************************/
 #slide2{
-	background-color:#CC4D00;	
+	background-color:#FFFFFF;	
 }
 #slide2 .slideno {
 	color:#7E2F00;	
@@ -153,7 +185,7 @@ left: -150px;
  SLIDE 3 
 *******************************/
 #slide3{
-	background-color:#990012;
+	background-color:#FFFFFF;
 }
 #slide3 .slideno {
 	color:#66000A;	
@@ -193,7 +225,7 @@ left: 300px;
  SLIDE 4
 *******************************/
 #slide4{
-	background-color:#009985;
+	background-color:#FFFFFF;
 }
 #slide4 .slideno {
 	color:#006659;	
@@ -233,7 +265,7 @@ left: 300px;
  SLIDE 5
 *******************************/
 #slide5{
-	background-color:#850099;
+	background-color:#FFFFFF;
 }
 #slide5 .slideno {
 	color:#590066;	
@@ -273,7 +305,7 @@ left: 300px;
  SLIDE 6
 *******************************/
 #slide6{
-	background-color:#BEC0BF;
+	background-color:#FFFFFF;
 }
 #slide6 .slideno {
 	color:#3E403F;	
