@@ -28,7 +28,7 @@ html,body{
 	line-height:30px;
 	margin-bottom:2px;
 	font-weight:bold;
-	-webkit-transition: all .2s ease-in-out;
+	-webkit-transition: all .2s linear-out;
 	border-bottom:1px solid black;
 	text-align:left;
 	width:53px;
@@ -187,6 +187,56 @@ left: -150px;
 	position:absolute;
 	top:100px;
 	right:300px;
+}
+#slide2 ul { 
+	width: 800px; 
+	list-style: none; 
+	line-height: normal; 
+	margin-top: 15px; 
+}
+#slide2 li { margin: 3px;}
+#slide2 li a {
+	width: 160px; 
+	height: 20px;
+	border: 1px #909090 solid; 
+	padding: 10px; 
+	float: left;
+	text-decoration: none;
+	display: inline-block;
+	color: #909090;
+	margin: 4px;
+	-webkit-transition:color 500ms linear;  
+	-moz-transition:color 500ms linear;  
+	-o-transition:color 500ms linear;  
+	transition:color 500ms linear; 
+	-webkit-transition:background-color 200ms linear;  
+	-moz-transition:background-color 200ms linear;  
+	-o-transition:background-color 200ms linear;  
+	transition:background-color 200ms linear; 
+	-webkit-transition:width 500ms linear;  
+	-moz-transition:width 500ms linear;  
+	-o-transition:width 500ms linear;  
+	transition:width 500ms linear; 
+	position: relative;
+	z-index: 1;
+}
+#slide2 li a:hover, #slide2 li a.resize {
+	color: #FFFFFF;
+	background-color: #909090;
+}
+
+#slide2 li a.resize {
+	width: 700px;
+	z-index: 2;
+}
+
+#slide2 #skills li a span {
+	display: none;
+	color: #FFFFFF;
+}
+
+#slide2 #skills li a span.showDetails {
+	display: inline;
 }
 /******************************
  SLIDE 3 
