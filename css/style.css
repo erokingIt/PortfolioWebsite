@@ -109,6 +109,7 @@ z-index:1;
 	font-size: 28px;
 }
 #slide1 .slideno {
+	font-size: 82px;
 }
 .slide table {
 	width: 800px;
@@ -133,6 +134,24 @@ z-index:1;
 	display: inline-block;
 	position: absolute;
 	margin-left: 530px;
+}
+
+#slide1 #code {
+	font-family: "Courier New", Courier, monospace;
+	font-size: 11px;
+	color: green;
+	display: inline-block;
+	width: 250px;
+	height: 500px;
+	border: 0px solid black;
+	overflow: hidden;
+	float: left;
+	margin-left: 20px;
+}
+
+#slide1 #coffee {
+	float: left;
+	margin-left: 110px;
 }
 
 /******************************
@@ -290,6 +309,21 @@ left: -150px;
 	position: absolute;
 	margin-left: 397px;
 }
+
+#slide3 .content a, #slide3 .content a:visited,
+#slide3 .content a:link {
+	text-decoration: none;
+	color: #4b4b4b;
+}
+
+#slide3 .content a:active {
+	color: #6e6e6e;
+}
+
+#slide3 .content a:hover {
+	color: #343434
+}
+
 /******************************
  SLIDE 4
 *******************************/

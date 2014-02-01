@@ -33,11 +33,10 @@
 	</ul>
 -->
 <div class="slide" id="slide1" data-slide="1" data-stellar-background-ratio="0.5">
-<span class="slideno">ERIK J BENNETT</span>
-<div class="container">Web Design/Graphic Desginer/PC Tech/Programmer :)</div>
+<span class="slideno"> <img src="images/myLogo2Sm.jpg" style="vertical-align:text-top;" /> ERIK J BENNETT</span>
 <div class="container"><HR></div>
-<div class="container content">
-	<div class="leftContent">
+<div class="container content" >
+	<div>
 	I am the person you need for quality websites.  I strive to create 
 	aesthetically pleasing and functional websites that serve their owners and users well.  Included is my 
 	enjoyment of graphic design 
@@ -45,9 +44,14 @@
 	<br><br>
 	Programming is a passion of mine.  I enjoy generating ideas and seeing them implemented
 	</div>
-	<div class="rightImg">
-	<image src="images/Me_Portrait2.jpg" style="">
+	<div style="position: absolute; top: 500px; display: inline-block; width: 800px;">
+		<img id="coffee" src="images/coffee2Code.png" /> 
+		<!--
+		<div style="display: inline-block; float: left; margin-left: 113px">&larr; I turn this..<br> ...into this &rarr;</div> 
+		-->
+		<div id="code">code here</div>
 	</div>
+	
 </div>
 <a class="button" data-slide="2" title=""></a>
 </div>
@@ -110,7 +114,7 @@ Below describes the languages and web technologies used:
 <span class="slideno">VIDEO PRODUCTION</span>
 <div class="container"><HR></div>
 <div class="container content">
-<p>Below are videos created in Video Production class and GTA IV video editor.</p>
+<p style="margin-bottom: 20px;">Below are videos created in Video Production class and GTA IV video editor.</p>
 <iframe width="560" height="315" 
 src="//www.youtube.com/embed/videoseries?list=PLETNAi0jRlPT7BMFNHYN0BFhnkhc7BfvZ" 
 frameborder="0" allowfullscreen></iframe>
@@ -171,6 +175,14 @@ jQuery(document).ready(function() {
 	}).mouseout(function () {
 		jQuery(this).removeClass("hover");
 	});
+	
+	jQuery(":visible").not("html").each( function () {
+		jQuery(this).mouseover(function () {
+			if(jQuery(this).children().length < 3 ) {
+				jQuery("#code").text( jQuery(this).html() );
+			}
+		});
+	} );
 });
 </script>
 </html>
