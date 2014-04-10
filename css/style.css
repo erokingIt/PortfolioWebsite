@@ -16,6 +16,10 @@ html,body{
 	color: #909090;
 }
 
+body {
+	margin: 0;
+}
+
 .navigation{
 	position:fixed;
 	z-index:1;
@@ -77,7 +81,6 @@ z-index:1;
 	bottom:0px;
 	right: 0;
 	background-color:#333333;
-	background-image:url(../images/arrow.png);
 }
 
 .buttonEnd {
@@ -88,7 +91,6 @@ z-index:1;
 	bottom:0px;
 	right: 0;
 	background-color:#333333;
-	background-image:url(../images/doubleArrowUp.png);
 }
 .button:hover{
 	background-color:#494949;
@@ -99,6 +101,27 @@ z-index:1;
 	width: 800px;
 	margin-left: auto;
 	margin-right: auto;
+}
+
+.slide a.button  {
+	display: none;
+}
+
+.rightImg img {
+	-moz-box-shadow: 5px 5px 5px #888;
+	-webkit-box-shadow: 5px 5px 5px #888;
+	box-shadow: 5px 5px 5px #888;
+}
+
+#fixedButton {
+	position: fixed; 
+	bottom: 0; 
+	right: 0; 
+	z-index:100;
+}
+
+#ejbLogo {
+	vertical-align:text-top;
 }
 
 /******************************
@@ -152,6 +175,13 @@ z-index:1;
 #slide1 #coffee {
 	float: left;
 	margin-left: 110px;
+}
+
+#coffeeContent {
+	position: absolute; 
+	top: 500px; 
+	display: inline-block; 
+	width: 800px;
 }
 
 /******************************
@@ -213,17 +243,14 @@ left: -150px;
 	line-height: normal; 
 	margin-top: 15px; 
 }
-#slide2 li { margin: 3px;}
 #slide2 li a, #slide2 li {
 	width: 160px; 
-	height: 20px;
-	border: 1px #909090 solid; 
-	padding: 10px; 
+	height: 35px;
+	margin: 8px;
 	float: left;
 	text-decoration: none;
 	display: inline-block;
 	color: #909090;
-	margin: 4px;
 	-webkit-transition:color 500ms linear;  
 	-moz-transition:color 500ms linear;  
 	-o-transition:color 500ms linear;  
@@ -232,21 +259,52 @@ left: -150px;
 	-moz-transition:background-color 200ms linear;  
 	-o-transition:background-color 200ms linear;  
 	transition:background-color 200ms linear; 
+	
+	-webkit-transition:opacity 200ms linear;  
+	-moz-transition:opacity 200ms linear;  
+	-o-transition:opacity 200ms linear;  
+	transition:opacity 200ms linear; 
+	
+	/*
 	-webkit-transition:width 500ms linear;  
 	-moz-transition:width 500ms linear;  
 	-o-transition:width 500ms linear;  
 	transition:width 500ms linear; 
+	*/
 	position: relative;
 	z-index: 1;
 }
-#slide2 li a:hover, #slide2 li a.resize, #slide2 li.hover {
+#slide2 li span {
+	display: inline-block;
+	position: absolute;
+	border: 1px #909090 solid;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	padding-top: 5px;
+	padding-left: 5px;
+	background-color: #FFF;
+	z-index: 2;
+	/*
+	-webkit-transition:width 500ms linear;  
+	-moz-transition:width 500ms linear;  
+	-o-transition:width 500ms linear;  
+	transition:width 500ms linear;
+	*/
+}
+#slidee2 li a:hover, #slide2 li a.resize, #slidee2 li.hover span {
 	color: #FFFFFF;
 	background-color: #909090;
 }
 
-#slide2 li a.resize {
+#slide2 li span.resize {
 	width: 700px;
-	z-index: 2;
+	z-index: 3;
+}
+
+#slide2 li.resize {
+	z-index: 3;
 }
 
 #slide2 #skills li a span {
@@ -257,6 +315,96 @@ left: -150px;
 #slide2 #skills li a span.showDetails {
 	display: inline;
 }
+
+#slide2 #skillRange {
+	margin-left: auto; 
+	margin-right: auto;
+	width: 165px; 
+	margin-bottom: 10px;
+	height: 35px; 
+	margin-top: 0;
+}
+
+#skillRange li a, #skillRange li {
+	width: 16px;
+	margin: 0;
+}
+
+#skillRange li, #skillRange li a, #skillRange li span {
+	padding: 0;
+}
+
+#skillRange li:hover {
+	width: 20px;
+	z-index: 3;
+}
+
+#skillRange li:hover span{
+	border-color: #000;
+	z-index: 3;
+}
+
+#skillRangeContainer {
+	clear: both; 
+	width: 200px; 
+	float: right;
+}
+
+#skillRangeTable {
+	width: 200px;
+}
+
+#rateDescriptionCell {
+	text-align:center;
+}
+
+.thirdOpacity {
+	opacity: 0.3;
+}
+
+.blackBorder {
+	border-color: #000000;
+}
+
+#slide2 li.rateTen span {
+	background-color : #4b4b4b;
+	color: #FFFFFF;
+}
+#slide2 li.rateNine span {
+	background-color : #5d5d5d;
+	color: #FFFFFF;
+}
+#slide2 li.rateEight span {
+	background-color : #6e6e6e;
+	color: #FFFFFF;
+}
+#slide2 li.rateSeven span {
+	background-color : #818181;
+	color: #FFFFFF;
+}
+#slide2 li.rateSix span {
+	background-color : #939393;
+	color: #FFFFFF;
+}
+#slide2 li.rateFive span {
+	background-color : #a5a5a5;
+	color: #FFFFFF;
+}
+#slide2 li.rateFour span {
+	background-color : #b7b7b7;
+	color: #FFFFFF;
+}
+#slide2 li.rateThree span {
+	background-color : #c9c9c9;
+	color: #FFFFFF;
+}
+#slide2 li.rateTwo span {
+	background-color : #dbdbdb;
+}
+#slide2 li.rateOne span {
+	background-color : #ededed ;
+}
+
 /******************************
  SLIDE 3 
 *******************************/
@@ -371,15 +519,82 @@ left: 300px;
 	background-color:#FFFFFF;
 }
 #slide5 .slideno {
+	font-size: 47px;
 }
-#slide5 ul { 
+#slide5 img:nth-child(2){
+	position:absolute;
+	top:100px;
+	left:100px;
+}
+#slide5 img:nth-child(3){
+	position:absolute;
+	top:150px;
+	left:300px;
+}
+#slide5 img:nth-child(4){
+	position:absolute;
+	top:450px;
+	left:300px;
+}
+#slide5 img:nth-child(5){
+	position:absolute;
+	top:200px;
+	right:300px;
+}
+#slide5 img:nth-child(6){
+	position:absolute;
+	top:100px;
+	right:300px;
+}
+#slide5 .content {
+	margin-top: 40px;
+}
+
+#slide5 .leftContent {
+	width: 375px;
+	display: inline-block;
+	font-size: 20px;
+	position: absolute;
+	margin-top: 0;
+}
+
+#slide5 .rightImg {
+	width: 261px;
+	display: inline-block;
+	position: absolute;
+	margin-left: 397px;
+}
+
+#slide5 .content a, #slide5 .content a:visited,
+#slide5 .content a:link {
+	text-decoration: none;
+	color: #4b4b4b;
+}
+
+#slide5 .content a:active {
+	color: #6e6e6e;
+}
+
+#slide5 .content a:hover {
+	color: #343434
+}
+
+/******************************
+ SLIDE 6
+*******************************/
+#slide6{
+	background-color:#FFFFFF;
+}
+#slide6 .slideno {
+}
+#slide6 ul { 
 	width: 800px; 
 	list-style: none; 
 	line-height: normal; 
 	margin-top: 15px; 
 }
-#slide5 li { margin: 3px;}
-#slide5 li {
+#slide6 li { margin: 3px;}
+#slide6 li {
 	width: 160px; 
 	height: 20px;
 	border: 1px #909090 solid; 
@@ -404,11 +619,11 @@ left: 300px;
 	position: relative;
 	z-index: 1;
 }
-#slide5 li a.resize, #slide5 li.hover {
+#slide6 li a.resize, #slide6 li.hover {
 	color: #FFFFFF;
 	background-color: #909090;
 }
-#slide5 li a {
+#slide6 li a {
 	text-decoration: none;
 	color: #000;
 }
