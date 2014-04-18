@@ -1,0 +1,114 @@
+@charset "utf-8";
+
+
+body {
+    overflow-x: hidden;
+}
+
+#fixedButton {
+	display: none;
+}
+
+.slide {
+	width: auto;
+	height: auto;
+	padding: 15px;
+}
+
+.slideno {
+	width: auto;
+}
+
+.container {
+	width: auto;
+}
+
+.slide .content,
+#slide5 .leftContent,
+#slide3 .leftContent {
+	font-size: 28px;
+}
+
+#slide1 .slideno {
+	font-size: 75px;
+}
+
+#coffeeContent {
+	display: none;
+}
+
+#slide2 .slideno {
+	font-size: 45px;
+}
+
+#slide2 ul {
+	width: auto;
+}
+
+#skillRangeContainer {
+	display: none;
+}
+
+#slide3 .slideno {
+	font-size: 48px;
+	clear: both;
+}
+
+#slide3 .content {
+	height: 990px;
+}
+
+#slide3 .rightImg {
+	display: none;
+}
+
+#slide4 .slideno {
+    font-size: 50px;
+}
+
+#slide4 .content {
+	height: 195px;
+}
+
+#ytFrame {
+	display: none;
+}
+
+#ytLink {
+	display: inline;
+	height: 35px;
+    width: 285px;
+	border: 1px solid #909090;
+    color: #909090;
+    display: inline-block;
+    float: left;
+    margin: 4px;
+    padding: 10px;
+    position: relative;
+    text-decoration: none;
+}
+
+#slide5 .content {
+	height: 590px;
+}
+
+#slide5 .rightImg {
+	display: none;
+}
+
+#slide6 .slideno {
+    font-size: 55px;
+}
+
+#slide6 ul {
+	width: auto;
+}
+
+#slide6 li {
+	width: 285px;
+	height: 35px;
+}
+
+#slide6 .content {
+	height: 545px;
+}
