@@ -24,8 +24,8 @@ body {
 }
 
 .slide .content,
-#slide5 .leftContent,
-#slide3 .leftContent {
+div#slide5 .leftContent,
+div#slide3 .leftContent {
 	font-size: 28px;
 }
 
