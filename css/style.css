@@ -516,6 +516,10 @@ left: 300px;
 	display: none;
 }
 
+#slide4 #vidBlurb {
+	margin-bottom: 20px;
+}
+
 /******************************
  SLIDE 5
 *******************************/

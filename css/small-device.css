@@ -25,8 +25,10 @@ body {
 
 .slide .content,
 div#slide5 .leftContent,
-div#slide3 .leftContent {
-	font-size: 28px;
+div#slide2 .container,
+div#slide3 .leftContent,
+#slide4 #vidBlurb  {
+	font-size: 28px!important;
 }
 
 #slide1 .slideno {
