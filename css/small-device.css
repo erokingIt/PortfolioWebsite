@@ -62,6 +62,10 @@ body {
 	display: none;
 }
 
+#slide3 .leftContent {
+	width: auto;
+}
+
 #slide4 .slideno {
     font-size: 50px;
 }
@@ -94,6 +98,11 @@ body {
 
 #slide5 .rightImg {
 	display: none;
+}
+
+
+#slide5 .leftContent {
+	width: auto;
 }
 
 #slide6 .slideno {

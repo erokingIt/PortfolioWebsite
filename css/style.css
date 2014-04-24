@@ -472,10 +472,6 @@ left: -150px;
 	color: #343434
 }
 
-#slide3 .leftContent {
-	width: auto;
-}
-
 /******************************
  SLIDE 4
 *******************************/
@@ -585,10 +581,6 @@ left: 300px;
 
 #slide5 .content a:hover {
 	color: #343434
-}
-
-#slide5 .leftContent {
-	width: auto;
 }
 
 /******************************
